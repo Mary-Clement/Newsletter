@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newsletter Signup</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="main-container">
+    <div class="image-container">
+      <img src="images/illustration-sign-up-desktop.svg" alt="Newsletter Image">
+    </div>
+    <div class="form-container">
+      <h1>Stay updated!</h1>
+      <p class="text">Join 60,000+ product managers receiving monthly updates on:</p>
+      <p class="radio-icon">Product discovery and building what matters</p>
+      <p class="radio-icon">Measuring to ensure updates are a success</p>
+      <p class="radio-icon">And much more!</p>
+
+      <form class="form" id="newsletter-form">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <span class="error-message" id="error-message"></span>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+    </div>
+  </div>
+  
+
+      <div id="success-message" class="success-message hidden">
+        <img src="images/icon-success.svg" alt="Radio Icon" class="icon-list">
+        <div class="message-content">
+            Thank you for subscribing <span id="user-email"></span>
+            <p>
+                A confirmation email has been sent to ash@loremcompany.com. 
+                Please open it and click the button inside to confirm your subscription.
+            </p>
+            <button id="dismiss-button">Dismiss message</button>
+        </div>
+    </div>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>
